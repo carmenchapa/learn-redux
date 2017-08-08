@@ -1,7 +1,10 @@
 import React from 'react'
 import Photo from './Photo'
 
-const PhotoGrid = React.createClass({
+class PhotoGrid extends React.Component {
+	constructor(props) {
+    	super(props);
+  	}
 	render() {
 		return (
 			<div className="photo-grid">
@@ -10,6 +13,6 @@ const PhotoGrid = React.createClass({
 			</div>
 		)
 	}
-})
+}
 
 export default PhotoGrid
